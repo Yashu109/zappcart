@@ -1,0 +1,23 @@
+/* Shop.css */
+.shop {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    margin-top: 5%;
+  }
+  
+  .shop-header {
+    margin-bottom: 30px;
+  }
+  
+  .shop h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .shop p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
