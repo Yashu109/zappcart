@@ -25,7 +25,7 @@ const savedAddresses = [
   {
     id: 1,
     name: "Home",
-    fullName: "John Doe",
+    fullName: "Praveen",
     address: "123 Main Street, Apartment 4B",
     city: "Bangalore",
     state: "Karnataka",
@@ -36,7 +36,7 @@ const savedAddresses = [
   {
     id: 2,
     name: "Office",
-    fullName: "John Doe",
+    fullName: "praveen",
     address: "456 Work Avenue, Floor 3",
     city: "Bangalore",
     state: "Karnataka",

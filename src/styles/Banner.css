@@ -44,7 +44,7 @@
   font-size: var(--font-size-4xl);
   line-height: 1.2;
   margin-bottom: var(--spacing-md);
-  color: var(--text-dark);
+  color: #d10d0d;
   background: linear-gradient(120deg, var(--text-dark) 0%, var(--secondary) 100%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -54,7 +54,7 @@
 
 .banner-description {
   font-size: var(--font-size-lg);
-  color: var(--text-medium);
+  color: #ffffff;
   margin-bottom: var(--spacing-lg);
   line-height: var(--line-height-normal);
 }

@@ -231,7 +231,6 @@
 // export default Banner;
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { 
   FaArrowRight, 
   FaArrowLeft, 
@@ -240,6 +239,17 @@ import {
   FaLeaf,
   FaStar
 } from 'react-icons/fa';
+
+// Ensure correct image imports
+// Use relative path from the component's location
+import WholeChickenBg from '../assets/Whole Chicken.jpg';
+import FishSeafoodBg from '../assets/Fish & Seafood.jpg';
+import MuttonCurryCutBg from '../assets/Mutton Curry Cut.jpg';
+import WholeChicken from '../assets/Whole Chicken.jpg';
+import FishSeafood from '../assets/Fish & Seafood.jpg';
+import MuttonCurryCut from '../assets/Mutton Curry Cut.jpg';
+
+// Styles import
 import '../styles/Banner.css';
 
 // Modified banner data - focusing only on chicken, mutton, and fish
@@ -251,11 +261,11 @@ const bannerData = [
     description: "Antibiotic-free chicken raised in certified farms",
     cta: "Shop Now",
     link: "/shop?category=chicken",
-    image: "/api/placeholder/600/400?text=Premium+Chicken",
+    backgroundImage: WholeChickenBg,
+    productImage: WholeChicken,
     discount: "20% OFF",
     originalPrice: 249,
     discountedPrice: 199,
-    backgroundColor: "#f8f2e9"
   },
   {
     id: 2,
@@ -264,11 +274,11 @@ const bannerData = [
     description: "Wild-caught fish rich in Omega-3",
     cta: "Explore",
     link: "/shop?category=fish",
-    image: "/api/placeholder/600/400?text=Fresh+Fish",
+    backgroundImage: FishSeafoodBg,
+    productImage: FishSeafood,
     discount: "15% OFF",
     originalPrice: 599,
     discountedPrice: 509,
-    backgroundColor: "#e5f6ff"
   },
   {
     id: 3,
@@ -277,11 +287,11 @@ const bannerData = [
     description: "Tender and juicy cuts for your special occasions",
     cta: "Buy Now",
     link: "/shop?category=mutton",
-    image: "/api/placeholder/600/400?text=Premium+Mutton",
+    backgroundImage: MuttonCurryCutBg,
+    productImage: MuttonCurryCut,
     discount: "10% OFF",
     originalPrice: 449,
     discountedPrice: 404,
-    backgroundColor: "#f8e9e9"
   }
 ];
 
@@ -382,13 +392,19 @@ const Banner = () => {
     <div className="banner-container">
       <div 
         className="main-banner" 
-        style={{ backgroundColor: currentBanner.backgroundColor }}
+        style={{ 
+          backgroundImage: `url(${currentBanner.backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
         onMouseEnter={pauseAutoPlay}
         onMouseLeave={resumeAutoPlay}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
+        <div className="banner-overlay"></div>
+        
         <div className="banner-content slide-up">
           <span className="banner-subtitle">{currentBanner.subtitle}</span>
           <h1 className="banner-title">{currentBanner.title}</h1>
@@ -412,17 +428,24 @@ const Banner = () => {
               </div>
             </div>
             
-            <Link to={currentBanner.link} className="cta-button">
+            <a 
+              href={currentBanner.link} 
+              className="cta-button"
+            >
               {currentBanner.cta} <FaArrowRight />
-            </Link>
+            </a>
           </div>
         </div>
         
         <div className="banner-image">
           <img 
-            src={currentBanner.image}
+            src={currentBanner.productImage}
             alt={currentBanner.title} 
             className="product-image fade-in"
+            onError={(e) => {
+              console.error('Image load error:', e);
+              e.target.style.display = 'none';
+            }}
           />
         </div>
         

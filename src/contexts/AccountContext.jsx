@@ -1,14 +1,14 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
-
+import Praveen from '../assets/Praveen.jpg'
 // Create the context
 const AccountContext = createContext();
 
 // Sample user data for demonstration
 const demoUserProfile = {
-  name: "John Doe",
-  email: "john.doe@example.com",
+  name: "Praveen",
+  email: "Praveen.doe@example.com",
   phone: "9876543210",
-  profileImage: "/api/placeholder/150/150?text=User"
+  profileImage: Praveen
 };
 
 // Sample orders data
