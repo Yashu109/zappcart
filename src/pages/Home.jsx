@@ -18,52 +18,52 @@
 //   // Filter products for featured section
 //   const featuredProducts = products.slice(0, 4);
   
-//   // Categories data - chicken focused
+//   // Categories data
 //   const categories = [
 //     {
-//       title: "Boneless Cuts",
-//       image: "/api/placeholder/400/300?text=Boneless+Cuts",
-//       items: ["Chicken Breast", "Chicken Thigh", "Chicken Strips", "Chicken Cubes", "Chicken Tenders"]
+//       title: "Chicken",
+//       image: "/api/placeholder/400/300?text=Chicken",
+//       items: ["Whole Chicken", "Boneless", "Curry Cut", "Wings", "Leg Piece"]
 //     },
 //     {
-//       title: "Bone-in Cuts",
-//       image: "/api/placeholder/400/300?text=Bone-in+Cuts",
-//       items: ["Drumsticks", "Wings", "Lollipop", "Leg Quarters", "Thighs"]
+//       title: "Mutton",
+//       image: "/api/placeholder/400/300?text=Mutton",
+//       items: ["Curry Cut", "Boneless", "Chops", "Biryani Cut", "Keema"]
 //     },
 //     {
-//       title: "Whole Chicken",
-//       image: "/api/placeholder/400/300?text=Whole+Chicken",
-//       items: ["Regular Chicken", "Organic Chicken", "Free-range Chicken", "Broiler Chicken"]
+//       title: "Fish & Seafood",
+//       image: "/api/placeholder/400/300?text=Fish",
+//       items: ["Fish", "Prawns", "Crab", "Tuna", "Salmon"]
 //     },
 //     {
-//       title: "Marinated",
-//       image: "/api/placeholder/400/300?text=Marinated+Chicken",
-//       items: ["Tandoori", "Herb & Garlic", "Peri Peri", "BBQ", "Lemon Pepper"]
+//       title: "Ready to Cook",
+//       image: "/api/placeholder/400/300?text=Ready+To+Cook",
+//       items: ["Marinades", "Kebabs", "Burgers", "Nuggets", "Sausages"]
 //     }
 //   ];
   
 //   // Premium selections data
 //   const premiumSelections = [
 //     {
-//       name: "Organic Free-Range Chicken",
-//       price: 599,
-//       image: "/api/placeholder/500/300?text=Organic+Chicken",
-//       description: "Naturally raised free-range chicken with no antibiotics",
-//       origin: "Local Farms"
+//       name: "Premium Wagyu Steak",
+//       price: 2499,
+//       image: "/api/placeholder/500/300?text=Wagyu+Steak",
+//       description: "Japanese A5 Wagyu with exceptional marbling and flavor",
+//       origin: "Japan"
 //     },
 //     {
-//       name: "Premium Corn-Fed Chicken",
-//       price: 499,
-//       image: "/api/placeholder/500/300?text=Corn-Fed+Chicken",
-//       description: "Premium quality corn-fed chicken with rich flavor",
-//       origin: "Specialty Farms"
+//       name: "Norwegian Salmon",
+//       price: 1299,
+//       image: "/api/placeholder/500/300?text=Norwegian+Salmon",
+//       description: "Wild caught Atlantic salmon, rich in Omega-3",
+//       origin: "Norway"
 //     },
 //     {
-//       name: "Heritage Breed Chicken",
-//       price: 699,
-//       image: "/api/placeholder/500/300?text=Heritage+Chicken",
-//       description: "Rare heritage breed chicken for exceptional taste",
-//       origin: "Artisanal Farms"
+//       name: "New Zealand Lamb",
+//       price: 999,
+//       image: "/api/placeholder/500/300?text=Lamb+Rack",
+//       description: "Grass-fed, free-range lamb with a delicate flavor",
+//       origin: "New Zealand"
 //     }
 //   ];
   
@@ -71,19 +71,19 @@
 //   const comboPacks = [
 //     {
 //       name: "Weekend BBQ Pack",
-//       items: "Chicken Wings + Drumsticks + Boneless Breasts",
-//       price: 699,
-//       originalPrice: 899,
+//       items: "Chicken Wings + Lamb Chops + Prawns",
+//       price: 999,
+//       originalPrice: 1299,
 //       image: "/api/placeholder/400/300?text=BBQ+Pack",
-//       savings: "Save ₹200"
+//       savings: "Save ₹300"
 //     },
 //     {
 //       name: "Family Feast Pack",
-//       items: "Whole Chicken + Curry Cut + Boneless Cubes",
-//       price: 999,
-//       originalPrice: 1299,
+//       items: "Whole Chicken + Mutton Curry Cut + Fish Fillets",
+//       price: 1499,
+//       originalPrice: 1999,
 //       image: "/api/placeholder/400/300?text=Feast+Pack",
-//       savings: "Save ₹300"
+//       savings: "Save ₹500"
 //     }
 //   ];
   
@@ -92,7 +92,7 @@
 //     {
 //       icon: <FaShieldAlt />,
 //       title: "Premium Quality",
-//       description: "Sourced from certified poultry farms"
+//       description: "Sourced from certified farms and suppliers"
 //     },
 //     {
 //       icon: <FaLeaf />,
@@ -116,21 +116,21 @@
 //     {
 //       name: "Priya S.",
 //       rating: 5,
-//       text: "The quality of chicken is exceptional! I've been ordering for 6 months now and have never been disappointed. The chicken is always fresh and the delivery is prompt.",
+//       text: "The quality of meat is exceptional! I've been ordering for 6 months now and have never been disappointed. The chicken is always fresh and the delivery is prompt.",
 //       image: "/api/placeholder/60/60?text=P",
 //       date: "3 weeks ago"
 //     },
 //     {
 //       name: "Rajesh K.",
 //       rating: 5,
-//       text: "Best chicken in town. Their marinated options save me so much time in the kitchen. The packaging is excellent and the delivery is always on time.",
+//       text: "Best seafood in town. Their prawns are always fresh and perfectly cleaned. The packaging is excellent and the delivery is always on time.",
 //       image: "/api/placeholder/60/60?text=R",
 //       date: "1 month ago"
 //     },
 //     {
 //       name: "Ananya M.",
 //       rating: 4,
-//       text: "Great variety of chicken cuts and excellent customer service. The boneless chicken breast is superior to what I get from local markets. Highly recommend!",
+//       text: "Great variety of products and excellent customer service. The mutton quality is superior to what I get from local markets. Highly recommend!",
 //       image: "/api/placeholder/60/60?text=A",
 //       date: "2 months ago"
 //     }
@@ -164,7 +164,7 @@
 //       <section className="category-showcase">
 //         <div className="container">
 //           <div className="section-header">
-//             <h2 className="section-title">Shop by Chicken Type</h2>
+//             <h2 className="section-title">Shop by Category</h2>
 //             <Link to="/categories" className="view-all">
 //               View All Categories <FaArrowRight />
 //             </Link>
@@ -187,7 +187,7 @@
 //                     ))}
 //                   </ul>
 //                   <Link 
-//                     to={`/shop?category=${category.title.toLowerCase().replace(/\s+/g, '-')}`} 
+//                     to={`/shop?category=${category.title.toLowerCase()}`} 
 //                     className="explore-category"
 //                   >
 //                     Explore {category.title} <FaArrowRight />
@@ -203,7 +203,7 @@
 //       <section className="featured-products">
 //         <div className="container">
 //           <div className="section-header">
-//             <h2 className="section-title">Featured Chicken Products</h2>
+//             <h2 className="section-title">Featured Products</h2>
 //             <Link to="/shop" className="view-all">
 //               View All Products <FaArrowRight />
 //             </Link>
@@ -224,7 +224,7 @@
 //             <div className="promo-text">
 //               <span className="promo-tag">Limited Time Offer</span>
 //               <h2>First Order Discount</h2>
-//               <p>Get 20% off on your first chicken order with code: <span className="promo-code">FRESH20</span></p>
+//               <p>Get 20% off on your first order with code: <span className="promo-code">FRESH20</span></p>
 //               <ul className="promo-features">
 //                 <li><FaCheckCircle /> Free delivery on orders above ₹500</li>
 //                 <li><FaCheckCircle /> Premium quality guaranteed</li>
@@ -235,7 +235,7 @@
 //               </Link>
 //             </div>
 //             <div className="promo-image">
-//               <img src="/api/placeholder/500/300?text=Fresh+Chicken+Offer" alt="Special Offer" />
+//               <img src="/api/placeholder/500/300?text=Special+Offer" alt="Special Offer" />
 //             </div>
 //           </div>
 //         </div>
@@ -245,8 +245,8 @@
 //       <section className="premium-selections">
 //         <div className="container">
 //           <div className="section-header">
-//             <h2 className="section-title">Premium Chicken Selections</h2>
-//             <span className="section-subtitle">Exclusive, high-quality chicken for special occasions</span>
+//             <h2 className="section-title">Premium Selections</h2>
+//             <span className="section-subtitle">Exclusive, high-quality meats for special occasions</span>
 //           </div>
           
 //           <div className="premium-grid">
@@ -276,8 +276,8 @@
 //       <section className="combo-packs">
 //         <div className="container">
 //           <div className="section-header">
-//             <h2 className="section-title">Chicken Combo Packs</h2>
-//             <span className="section-subtitle">Save more with these specially curated chicken combos</span>
+//             <h2 className="section-title">Value Combo Packs</h2>
+//             <span className="section-subtitle">Save more with these specially curated combos</span>
 //           </div>
           
 //           <div className="combo-grid">
@@ -345,7 +345,7 @@
 //           <div className="app-content">
 //             <div className="app-text">
 //               <h2>Download Our App</h2>
-//               <p>Get exclusive offers and track your chicken orders in real-time</p>
+//               <p>Get exclusive offers and track your orders in real-time</p>
 //               <ul className="app-features">
 //                 <li><FaCheckCircle /> Exclusive app-only offers</li>
 //                 <li><FaCheckCircle /> Real-time order tracking</li>
@@ -387,96 +387,85 @@ import {
 import Banner from '../components/Banner';
 import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
-import '../styles/Home.css';
-
-// Import images from src/assets/
-import BonelessCuts from '../assets/Boneless Cuts.jpg';
-import BoneInCuts from '../assets/Bone-in Cuts.jpg';
-import WholeChicken from '../assets/Whole Chicken.jpg';
-import MarinatedChicken from '../assets/Marinated.jpg';
-import OrganicChicken from '../assets/Organic Free-Range Chicken.jpg';
-import CornFedChicken from '../assets/Premium Corn-Fed Chicken.jpg';
-import HeritageChicken from '../assets/Heritage Breed Chicken.jpg';
-import BBQPacks from '../assets/Weekend BBQ Pack.jpg';
-import FeastPack from '../assets/Whole Chicken.jpg';
-import FreshChickenOffer from '../assets/FreshChickenOffer1.jpg';
+import MuttonSelection from '../assets/Mutton Selection.jpg';
+import cbrest from '../assets/c-brest.jpg';
+import NorwegianSalmon from '../assets/Norwegian Salmon.jpg';
+import MeatLoversPack from '../assets/Meat Lovers Pack.jpg';
+import PremiumSeafoodPack from '../assets/Premium Seafood Pack.jpg';
+import specialoffer from '../assets/special offer.png';
 import CustomerP from '../assets/CustomerP.jpg';
 import CustomerR from '../assets/CustomerR.jpg';
 import CustomerA from '../assets/CustomerA.jpg';
 import GooglePlay from '../assets/Google Play.jpg';
 import AppStore from '../assets/App Store.png';
 import AppPreview from '../assets/App Preview.jpg';
+import '../styles/Home.css';
 
 const Home = () => {
   // Filter products for featured section
   const featuredProducts = products.slice(0, 4);
   
-  // Categories data - chicken focused
+  // Categories data - only chicken, mutton, and fish
   const categories = [
     {
-      title: "Boneless Cuts",
-      image: '/api/placeholder/400/300?text=Boneless+Cuts',
-      items: ["Chicken Breast", "Chicken Thigh", "Chicken Strips", "Chicken Cubes", "Chicken Tenders"]
+      title: "Chicken",
+      // image: "/api/placeholder/400/300?text=Chicken",
+      items: ["Whole Chicken", "Boneless", "Curry Cut", "Wings", "Leg Piece"]
     },
     {
-      title: "Bone-in Cuts",
-      image: '/api/placeholder/400/300?text=Boneless+Cuts',
-      items: ["Drumsticks", "Wings", "Lollipop", "Leg Quarters", "Thighs"]
+      title: "Mutton",
+      // image: "/api/placeholder/400/300?text=Mutton",
+      items: ["Curry Cut", "Boneless", "Chops", "Biryani Cut", "Keema"]
     },
     {
-      title: "Whole Chicken",
-      image: '/api/placeholder/400/300?text=Boneless+Cuts',
-      items: ["Regular Chicken", "Organic Chicken", "Free-range Chicken", "Broiler Chicken"]
-    },
-    {
-      title: "Marinated",
-      image: '/api/placeholder/400/300?text=Boneless+Cuts',
-      items: ["Tandoori", "Herb & Garlic", "Peri Peri", "BBQ", "Lemon Pepper"]
+      title: "Fish & Seafood",
+      // image: "/api/placeholder/400/300?text=Fish",
+      items: ["Fish", "Prawns", "Crab", "Tuna", "Salmon"]
     }
   ];
   
-  // Premium selections data
+  // Premium selections data - only chicken, mutton, and fish
   const premiumSelections = [
     {
-      name: "Organic Free-Range Chicken",
-      price: 599,
-      image: OrganicChicken,
-      description: "Naturally raised free-range chicken with no antibiotics",
+      name: "Premium Chicken Breast",
+      price: 399,
+      image: cbrest,
+      description: "Farm-raised antibiotic-free premium chicken breast",
       origin: "Local Farms"
     },
     {
-      name: "Premium Corn-Fed Chicken",
-      price: 499,
-      image: CornFedChicken,
-      description: "Premium quality corn-fed chicken with rich flavor",
-      origin: "Specialty Farms"
+      name: "Norwegian Salmon",
+      price: 1299,
+      image: NorwegianSalmon,
+      description: "Wild caught Atlantic salmon, rich in Omega-3",
+      origin: "Norway"
     },
     {
-      name: "Heritage Breed Chicken",
-      price: 699,
-      image: HeritageChicken,
-      description: "Rare heritage breed chicken for exceptional taste",
-      origin: "Artisanal Farms"
+      name: "Premium Mutton Cuts",
+      price: 999,
+      image: MuttonSelection,
+      description: "Grass-fed, free-range mutton with a rich flavor",
+      origin: "Local Farms"
     }
   ];
   
-  // Value combo packs
+  // Value combo packs - focused on chicken, mutton, and fish
   const comboPacks = [
     {
-      name: "Weekend BBQ Pack",
-      items: "Chicken Wings + Drumsticks + Boneless Breasts",
-      price: 699,
-      originalPrice: 899,
-      image: BBQPacks,
-      savings: "Save ₹200"
-    },
-    {
-      name: "Family Feast Pack",
-      items: "Whole Chicken + Curry Cut + Boneless Cubes",
+      name: "Meat Lover's Pack",
+      items: "Chicken Drumsticks + Mutton Curry Cut + Fish Fillets",
       price: 999,
       originalPrice: 1299,
-      image: FeastPack,
+      image: MeatLoversPack,
       savings: "Save ₹300"
+    },
+    {
+      name: "Premium Seafood Pack",
+      items: "Norwegian Salmon + Prawns + Fish Curry Cut",
+      price: 1499,
+      originalPrice: 1999,
+      image: PremiumSeafoodPack,
+      savings: "Save ₹500"
     }
   ];
   
@@ -485,7 +474,7 @@ const Home = () => {
     {
       icon: <FaShieldAlt />,
       title: "Premium Quality",
-      description: "Sourced from certified poultry farms"
+      description: "Sourced from certified farms and suppliers"
     },
     {
       icon: <FaLeaf />,
@@ -516,14 +505,14 @@ const Home = () => {
     {
       name: "Rajesh K.",
       rating: 5,
-      text: "Best chicken in town. Their marinated options save me so much time in the kitchen. The packaging is excellent and the delivery is always on time.",
+      text: "Best seafood in town. Their fish is always fresh and perfectly cleaned. The packaging is excellent and the delivery is always on time.",
       image: CustomerR,
       date: "1 month ago"
     },
     {
       name: "Ananya M.",
       rating: 4,
-      text: "Great variety of chicken cuts and excellent customer service. The boneless chicken breast is superior to what I get from local markets. Highly recommend!",
+      text: "Great variety of mutton cuts and excellent customer service. The quality is superior to what I get from local markets. Highly recommend!",
       image: CustomerA,
       date: "2 months ago"
     }
@@ -557,7 +546,7 @@ const Home = () => {
       <section className="category-showcase">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Shop by Chicken Type</h2>
+            <h2 className="section-title">Shop by Category</h2>
             <Link to="/categories" className="view-all">
               View All Categories <FaArrowRight />
             </Link>
@@ -580,7 +569,7 @@ const Home = () => {
                     ))}
                   </ul>
                   <Link 
-                    to={`/shop?category=${category.title.toLowerCase().replace(/\s+/g, '-')}`} 
+                    to={`/shop?category=${category.title.toLowerCase()}`} 
                     className="explore-category"
                   >
                     Explore {category.title} <FaArrowRight />
@@ -596,7 +585,7 @@ const Home = () => {
       <section className="featured-products">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Featured Chicken Products</h2>
+            <h2 className="section-title">Featured Products</h2>
             <Link to="/shop" className="view-all">
               View All Products <FaArrowRight />
             </Link>
@@ -617,7 +606,7 @@ const Home = () => {
             <div className="promo-text">
               <span className="promo-tag">Limited Time Offer</span>
               <h2>First Order Discount</h2>
-              <p>Get 20% off on your first chicken order with code: <span className="promo-code">FRESH20</span></p>
+              <p>Get 20% off on your first order with code: <span className="promo-code">FRESH20</span></p>
               <ul className="promo-features">
                 <li><FaCheckCircle /> Free delivery on orders above ₹500</li>
                 <li><FaCheckCircle /> Premium quality guaranteed</li>
@@ -628,7 +617,7 @@ const Home = () => {
               </Link>
             </div>
             <div className="promo-image">
-              <img src={FreshChickenOffer} alt="Special Offer" />
+              <img src={specialoffer} alt="Special Offer" />
             </div>
           </div>
         </div>
@@ -638,8 +627,8 @@ const Home = () => {
       <section className="premium-selections">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Premium Chicken Selections</h2>
-            <span className="section-subtitle">Exclusive, high-quality chicken for special occasions</span>
+            <h2 className="section-title">Premium Selections</h2>
+            <span className="section-subtitle">Exclusive, high-quality meats for special occasions</span>
           </div>
           
           <div className="premium-grid">
@@ -669,8 +658,8 @@ const Home = () => {
       <section className="combo-packs">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Chicken Combo Packs</h2>
-            <span className="section-subtitle">Save more with these specially curated chicken combos</span>
+            <h2 className="section-title">Value Combo Packs</h2>
+            <span className="section-subtitle">Save more with these specially curated combos</span>
           </div>
           
           <div className="combo-grid">
@@ -738,7 +727,7 @@ const Home = () => {
           <div className="app-content">
             <div className="app-text">
               <h2>Download Our App</h2>
-              <p>Get exclusive offers and track your chicken orders in real-time</p>
+              <p>Get exclusive offers and track your orders in real-time</p>
               <ul className="app-features">
                 <li><FaCheckCircle /> Exclusive app-only offers</li>
                 <li><FaCheckCircle /> Real-time order tracking</li>
@@ -763,5 +752,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;
