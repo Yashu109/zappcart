@@ -128,7 +128,7 @@ import BonelessCuts from '../assets/Boneless Cuts.jpg'
 import ChickenDrumsticks from '../assets/Chicken Drumsticks.jpg';
 import PrmiumMutton from '../assets/Premium Mutton.jpg'
 import WildSalman from '../assets/Wild Caught Salmon.jpg'
-import Prawn from '../assets/Fresh prawn.jpg'
+import Prawn from '../assets/Fresh Prawn.jpg'
 import FishCurryCut from '../assets/Fish Curry Cut.jpg'
 import MuttonCurryCut from '../assets/Mutton Curry Cut.jpg'
 
