@@ -240,11 +240,10 @@ import {
   FaStar
 } from 'react-icons/fa';
 
-// Ensure correct image imports
-// Use relative path from the component's location
-import WholeChickenBg from '../assets/Whole Chicken.jpg';
-import FishSeafoodBg from '../assets/Fish & Seafood.jpg';
-import MuttonCurryCutBg from '../assets/Mutton Curry Cut.jpg';
+// Optimize image imports
+import WholeChickenBg from '../assets/WholeChicken.jpg';
+import FishSeafoodBg from '../assets/Fish & Seafood1.jpg';
+import MuttonCurryCutBg from '../assets/Mutton Curry Cut1.jpg';
 import WholeChicken from '../assets/Whole Chicken.jpg';
 import FishSeafood from '../assets/Fish & Seafood.jpg';
 import MuttonCurryCut from '../assets/Mutton Curry Cut.jpg';
@@ -301,6 +300,7 @@ const Banner = () => {
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [imageLoaded, setImageLoaded] = useState(false);
   const autoPlayRef = useRef(null);
   
   // Initialize auto-slide functionality
@@ -441,11 +441,13 @@ const Banner = () => {
           <img 
             src={currentBanner.productImage}
             alt={currentBanner.title} 
-            className="product-image fade-in"
+            className={`product-image ${imageLoaded ? 'fade-in' : ''}`}
+            onLoad={() => setImageLoaded(true)}
             onError={(e) => {
               console.error('Image load error:', e);
               e.target.style.display = 'none';
             }}
+            loading="lazy" // Native lazy loading
           />
         </div>
         

@@ -213,10 +213,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight, FaShoppingBasket, FaRegListAlt, FaClock } from 'react-icons/fa';
-import WholeMutton from '../assets/Whole Mutton.jpg'
-import FishSeafood from '../assets/Fish & Seafood.jpg'
-import MuttonSelection from '../assets/Mutton Selection.jpg'
-import wholefish from '../assets/whole fish.jpg'
+import WholeMutton from '../assets/Mutton Curry Cut1.jpg'
+import FishSeafood from '../assets/Norwegian Salmon1.jpg'
+import MuttonSelection from '../assets/Mutton Curry Cut1.jpg'
+import wholefish from '../assets/Fish & Seafood1.jpg'
 import Subscription from '../assets/Subscription.png'
 import WholeChicken from '../assets/Whole Chicken.jpg'
 import '../styles/Categories.css';

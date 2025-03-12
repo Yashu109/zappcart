@@ -123,14 +123,14 @@
 
 // src/data/products.js
 
-import FreshChickenBreast from '../assets/c-brest.jpg';
-import BonelessCuts from '../assets/Boneless Cuts.jpg'
-import ChickenDrumsticks from '../assets/Chicken Drumsticks.jpg';
-import PrmiumMutton from '../assets/Premium Mutton.jpg'
+import FreshChickenBreast from '../assets/c-brest1.jpg';
+import BonelessCuts from '../assets/Boneless Chicken.jpg'
+import ChickenDrumsticks from '../assets/Chicken Drumsticks1.jpg';
+import PrmiumMutton from '../assets/Mutton Curry Cut1.jpg'
 import WildSalman from '../assets/Wild Caught Salmon.jpg'
 import Prawn from '../assets/Fresh Prawn.jpg'
-import FishCurryCut from '../assets/Fish Curry Cut.jpg'
-import MuttonCurryCut from '../assets/Mutton Curry Cut.jpg'
+import FishCurryCut from '../assets/Fish Curry Cut1.jpg'
+import MuttonCurryCut from '../assets/Mutton Curry Cut1.jpg'
 
 export const products = [
   {
